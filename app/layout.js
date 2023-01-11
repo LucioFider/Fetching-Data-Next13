@@ -1,12 +1,12 @@
 import "../styles/globals.css";
+import Navbar from "./shared/navbar";
 
 export default function RootLayout({ children }) {
   return (
     <html>
       <head />
-
-      <body>
-        <h1>Dashboard</h1>
+      <body className="bg-gray-900 max-w-6xl mx-auto">
+        <Navbar />
         {children}
       </body>
     </html>
